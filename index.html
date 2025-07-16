@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium PhoneShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="light-mode">
+   <header>
+        <div class="logo">
+            <i class="fas fa-mobile-alt"></i> PhoneShop
+        </div>
+        
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Qidirish...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <nav>
+            <a href="#"><i class="fas fa-home"></i> Bosh sahifa</a>
+            <a href="#categories"><i class="fas fa-list"></i> Kategoriyalar</a>
+            <a href="#contact"><i class="fas fa-phone"></i> Aloqa</a>
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+        </nav>
+    </header>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide active">
+                <img src="image.png" alt="iPhone 15">
+                <div class="slide-info">
+                    <h2>iPhone 15 Pro Max</h2>
+                    <p>256GB | Titan korpus</p>
+                    <button class="detail-btn" data-id="1">Batafsil</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="download.jpg" alt="Samsung S23">
+                <div class="slide-info">
+                    <h2>Samsung S23 Ultra</h2>
+                    <p>12GB RAM | 200MP kamera</p>
+                    <button class="detail-btn" data-id="2">Batafsil</button>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <section class="categories" id="categories">
+        <h2><i class="fas fa-tags"></i> Kategoriyalar</h2>
+        <div class="category-list">
+            <div class="category-item" data-category="phones">
+                <div class="category-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <span>Smartfonlar</span>
+            </div>
+            <div class="category-item" data-category="accessories">
+                <div class="category-icon">
+                    <i class="fas fa-headphones"></i>
+                </div>
+                <span>Aksessuarlar</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2><i class="fas fa-box-open"></i> Mahsulotlar</h2>
+        <div class="product-list" id="product-list"></div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2><i class="fas fa-phone-alt"></i> Aloqa</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> It brain O'quv Markazi </p>
+                <p><i class="fas fa-phone"></i> +998 99 123 45 67</p>
+                <p><i class="fas fa-envelope"></i> info@phoneshop.uz</p>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Ismingiz">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Xabaringiz"></textarea>
+                <button type="submit">Yuborish <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
